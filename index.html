@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title>Arrays</title>
+</head>
+
+<body>
+    <p>How to declare Arrays
+        <h4 id="declaration_of_arrays"></h4>
+    </p>
+    <hr>
+    <p>How to fetch first element of Array
+        <h4 id="access_first_element"></h4>
+    </p>
+    <hr>
+    <p>How to fetch second element of Array
+        <h4 id="access_second_element"></h4>
+    </p>
+    <hr>
+    <p>How to fetch third element of Array
+        <h4 id="access_third_element"></h4>
+    </p>
+    <hr>
+    <p>How to get length of an Array
+        <h4 id="display_length_of_array"></h4>
+    </p>
+    <hr>
+    <p>How to loop the Array
+        <h4 id="loop_the_array"></h4>
+    </p>
+    <hr>
+    <p>How to add element at the end of the Array
+        <h4 id="add_element_at_the_end_of_array"></h4>
+    </p>
+    <hr>
+    <script>
+        var fruits = ["Apple", "Orange", "Mango"];
+        console.log(fruits);
+        document.getElementById("declaration_of_arrays").innerHTML = fruits;
+        var first_fruit = fruits[0];
+        console.log(first_fruit);
+        document.getElementById("access_first_element").innerHTML = first_fruit;
+        var second_fruit = fruits[1];
+        console.log(second_fruit);
+        document.getElementById("access_second_element").innerHTML = second_fruit;
+        var third_fruit = fruits[2];
+        console.log(third_fruit);
+        document.getElementById("access_third_element").innerHTML = third_fruit;
+        var length_of_the_array = fruits.length;
+        console.log(length_of_the_array);
+        document.getElementById("display_length_of_array").innerHTML = length_of_the_array;
+        var array_value = "";
+        for (i = 0; i < fruits.length; i++) {
+            console.log(fruits[i]);
+            array_value = array_value + fruits[i] + "<br>";
+        }
+        document.getElementById("loop_the_array").innerHTML = array_value;
+        fruits.push("Lemon");
+        console.log(fruits);
+        document.getElementById("add_element_at_the_end_of_array").innerHTML = fruits;
+    </script>
+</body>
+
+</html>
